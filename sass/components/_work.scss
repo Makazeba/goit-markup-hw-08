@@ -1,0 +1,41 @@
+.work__title, .team__title, .clients__title {
+    font-weight: 700;
+    font-size: 28px;
+line-height: 1.17;
+// font-size: 36px;
+// line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--main-color);
+}
+.work__title {
+    margin-bottom: 50px;
+}
+.work-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-list__item {
+    max-height: 294px;
+    position: relative;
+    &:not(:last-child) {
+    margin-right: var(--typical-gap);
+}
+}
+
+.work-list__cover-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}

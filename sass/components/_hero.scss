@@ -1,0 +1,55 @@
+.section {
+    padding: 60px 0;
+    @include desktop {
+        padding: 94px 0;
+    }
+}
+
+.hero {
+    background-color: var(--main-background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herou-img.jpg);
+}
+
+.hero__content {
+    text-align: center;
+    padding-top: 106px;
+    padding-bottom: 106px;
+    padding-right: 45px;
+    padding-left: 45px;
+}
+
+.hero__title {
+    font-weight: 900;
+font-size: 26px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #FFFFFF;
+// max-width: 696px;
+margin: 0 auto;
+margin-bottom: 30px;
+     @include desktop {
+        font-size: 44px;
+line-height: 1.36;
+     }
+}
+
+.hero__btn {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+display: inline-block;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+background-color: var(--accent-color);
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+width: 200px;
+padding: 10px 32px;
+white-space: nowrap;
+}
