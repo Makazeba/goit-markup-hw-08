@@ -3,14 +3,18 @@
     top: 50%;
     left: 50%;
     transform: rotate(360deg) translate(-50%, -50%) scale(1);
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
     background-color: #FFFFFF;
     border-radius: 7px;
     transition: transform 400ms;
     padding-top: 44px;
     padding-right: 40px;
     padding-left: 40px;
+        @include desktop {
+            width: 528px;
+            min-height: 581px;
+        }
 }
 
 .modal__button-close {

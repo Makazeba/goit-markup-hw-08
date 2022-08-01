@@ -136,7 +136,7 @@
     </header>
     <main>
       <!-- section 1 -->
-      <!-- <section class="hero section">
+      <section class="hero section">
         <div class="container">
           <div class="hero__content">
             <h1 class="hero__title">
@@ -148,9 +148,9 @@
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- section 2 -->
-      <!-- <section class="about section">
+      <section class="about section">
         <div class="container">
           <ul class="about-list list">
             <li class="about-list__item">
@@ -211,14 +211,18 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- section 3 -->
-      <!-- <section class="work section">
+      <section class="work section">
         <div class="container">
           <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="work-list list">
             <li class="work-list__item">
               <img
+                srcset="
+                  ./images/section3-img01.jpg    1x,
+                  ./images/section3-img01-2x.jpg 2x
+                "
                 src="./images/section3-img01.jpg"
                 alt="человек печатает на клавиатуре"
                 width="370"
@@ -228,6 +232,10 @@
             </li>
             <li class="work-list__item">
               <img
+                srcset="
+                  ./images/section3-img2.jpg    1x,
+                  ./images/section3-img2-2x.jpg 2x
+                "
                 src="./images/section3-img2.jpg"
                 alt="телефон в руках перед ноутбуком"
                 width="370"
@@ -237,6 +245,10 @@
             </li>
             <li class="work-list__item">
               <img
+                srcset="
+                  ./images/section3-img3.jpg    1x,
+                  ./images/section3-img3-2x.jpg 2x
+                "
                 src="./images/section3-img3.jpg"
                 alt="планшет в руках"
                 width="370"
@@ -246,21 +258,42 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- section 4 -->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <div class="team-content">
             <h2 class="team__title">Наша команда</h2>
             <ul class="team-list list">
               <li class="team-list__item">
-                <img
-                  class="team-list__image"
-                  src="./images/comand-img1.jpg"
-                  alt="Игорь Демьяненко"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/comand-img1.jpg    1x,
+                      ./images/comand-img1-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/comand-img1-tab.jpg    1x,
+                      ./images/comand-img1-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/comand-img1-mob.jpg    1x,
+                      ./images/comand-img1-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="team-list__image"
+                    src="./images/comand-img1.jpg"
+                    alt="Игорь Демьяненко"
+                  />
+                </picture>
                 <span class="team-list__after-title">Игорь Демьяненко</span>
                 <p class="team-list__text">Product Designer</p>
                 <ul class="soc-list list">
@@ -303,13 +336,34 @@
                 </ul>
               </li>
               <li class="team-list__item">
-                <img
-                  class="team-list__image"
-                  src="./images/comand-img2.jpg"
-                  alt="Ольга Репина"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/comand-img2.jpg    1x,
+                      ./images/comand-img2-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/comand-img2-tab.jpg    1x,
+                      ./images/comand-img2-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/comand-img2-mob.jpg    1x,
+                      ./images/comand-img2-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="team-list__image"
+                    src="./images/comand-img2.jpg"
+                    alt="Ольга Репина"
+                  />
+                </picture>
                 <span class="team-list__after-title">Ольга Репина</span>
                 <p class="team-list__text">Frontend Developer</p>
                 <ul class="soc-list list">
@@ -352,13 +406,34 @@
                 </ul>
               </li>
               <li class="team-list__item">
-                <img
-                  class="team-list__image"
-                  src="./images/comand-img3.jpg"
-                  alt="Николай Тарасов"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/comand-img3.jpg    1x,
+                      ./images/comand-img3-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/comand-img3-tab.jpg    1x,
+                      ./images/comand-img3-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/comand-img3-mob.jpg    1x,
+                      ./images/comand-img3-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="team-list__image"
+                    src="./images/comand-img3.jpg"
+                    alt="Николай Тарасов"
+                  />
+                </picture>
                 <span class="team-list__after-title">Николай Тарасов</span>
                 <p class="team-list__text">Marketing</p>
                 <ul class="soc-list list">
@@ -401,13 +476,34 @@
                 </ul>
               </li>
               <li class="team-list__item">
-                <img
-                  class="team-list__image"
-                  src="./images/comand-img4.jpg"
-                  alt="Михаил Ермаков"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/comand-img4.jpg    1x,
+                      ./images/comand-img4-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/comand-img4-tab.jpg    1x,
+                      ./images/comand-img4-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/comand-img4-mob.jpg    1x,
+                      ./images/comand-img4-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="team-list__image"
+                    src="./images/comand-img4.jpg"
+                    alt="Михаил Ермаков"
+                  />
+                </picture>
                 <span class="team-list__after-title">Михаил Ермаков</span>
                 <p class="team-list__text">UI Designer</p>
                 <ul class="soc-list list">
@@ -452,7 +548,7 @@
             </ul>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- -----Section 5----- -->
       <section class="clients section">
         <div class="container">

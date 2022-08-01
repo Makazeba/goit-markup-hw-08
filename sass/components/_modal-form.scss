@@ -77,8 +77,8 @@ color: rgba(117, 117, 117, 0.5);
 
 .modal-form__checkbox-label {
     font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
+    font-size: 12px;
+line-height: 1.16;
 letter-spacing: 0.03em;
 color: #757575;
 display: flex;
@@ -92,6 +92,10 @@ justify-content: center;
     border-radius: 2px;
     margin-right: 8.38px;
 }
+    @include desktop {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .modal-form__checkbox-icon:checked + .modal-form__checkbox-label::before {
